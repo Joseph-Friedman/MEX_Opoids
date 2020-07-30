@@ -1,0 +1,505 @@
+"","municipios","coords.lon","coords.lat","lon","lat","municipios2"
+"1"," Abasolo, Guanajuato",-101.52696,  20.45364,-101.55196,20.37864," Abasolo,
+Guanajuato"
+"2"," Acajete, Puebla", -97.95224,  19.10613, -97.97724,19.03113," Acajete,
+Puebla"
+"3"," Acala, Chiapas", -92.80695,  16.55350, -92.83195,16.47850," Acala,
+Chiapas"
+"4"," Acapulco De Juarez, Guerrero", -99.82365,  16.85311, -99.84865,16.77811," Acapulco De Juarez,
+Guerrero"
+"5"," Acatlan, Puebla", -98.04981,  18.20319, -98.07481,18.12819," Acatlan,
+Puebla"
+"6"," Acatzingo, Puebla", -97.78427,  18.98064, -97.80927,18.90564," Acatzingo,
+Puebla"
+"7"," Actopan, Hidalgo", -98.95214,  20.27435, -98.97714,20.19935," Actopan,
+Hidalgo"
+"8"," Agua Dulce, Veracruz De Ignacio De La Llave", -94.14360,  18.14259, -94.16860,18.06759," Agua Dulce,
+Veracruz De Ignacio De La Llave"
+"9"," Aguascalientes, Aguascalientes",-102.29157,  21.88526,-102.31657,21.81026," Aguascalientes,
+Aguascalientes"
+"10"," Ahome, Sinaloa",-108.99173,  25.79041,-109.01673,25.71541," Ahome,
+Sinaloa"
+"11"," Ajalpan, Puebla", -97.25913,  18.37816, -97.28413,18.30316," Ajalpan,
+Puebla"
+"12"," Alvaro Obregon, Ciudad De Mexico", -99.22671,  19.36053, -99.25171,19.28553," Alvaro Obregon,
+Ciudad De Mexico"
+"13"," Amecameca, Mexico", -98.76711,  19.12524, -98.79211,19.05024," Amecameca,
+Mexico"
+"14"," Apatzingan, Michoacan De Ocampo",-102.35367,  19.08373,-102.37867,19.00873," Apatzingan,
+Michoacan De Ocampo"
+"15"," Apetatitlan De Antonio Carvajal, Tlaxcala", -98.19646,  19.33208, -98.22146,19.25708," Apetatitlan De Antonio Carvajal,
+Tlaxcala"
+"16"," Apodaca, Nuevo Leon",-100.18587,  25.77647,-100.21087,25.70147," Apodaca,
+Nuevo Leon"
+"17"," Atizapan De Zaragoza, Mexico", -99.26747,  19.55623, -99.29247,19.48123," Atizapan De Zaragoza,
+Mexico"
+"18"," Atlixco, Puebla", -98.42939,  18.91312, -98.45439,18.83812," Atlixco,
+Puebla"
+"19"," Atoyac De Alvarez, Guerrero",-100.43212,  17.20564,-100.45712,17.13064," Atoyac De Alvarez,
+Guerrero"
+"20"," Atzalan, Veracruz De Ignacio De La Llave", -97.24282,  19.78695, -97.26782,19.71195," Atzalan,
+Veracruz De Ignacio De La Llave"
+"21"," Axochiapan, Morelos", -98.75362,  18.50366, -98.77862,18.42866," Axochiapan,
+Morelos"
+"22"," Azcapotzalco, Ciudad De Mexico", -99.18867,  19.48466, -99.21367,19.40966," Azcapotzalco,
+Ciudad De Mexico"
+"23"," Bahia De Banderas, Nayarit",-105.24809,  20.80748,-105.27309,20.73248," Bahia De Banderas,
+Nayarit"
+"24"," Benito Juarez, Ciudad De Mexico", -99.15914,  19.37941, -99.18414,19.30441," Benito Juarez,
+Ciudad De Mexico"
+"25"," Benito Juarez, Quintana Roo", -86.86640,  21.13990, -86.89140,21.06490," Benito Juarez,
+Quintana Roo"
+"26"," Cadereyta Jimenez, Nuevo Leon", -99.99682,  25.58599,-100.02182,25.51099," Cadereyta Jimenez,
+Nuevo Leon"
+"27"," Cajeme, Sonora",-109.94006,  27.49340,-109.96506,27.41840," Cajeme,
+Sonora"
+"28"," Campeche, Campeche", -90.53491,  19.83013, -90.55991,19.75513," Campeche,
+Campeche"
+"29"," Catemaco, Veracruz De Ignacio De La Llave", -95.11297,  18.42126, -95.13797,18.34626," Catemaco,
+Veracruz De Ignacio De La Llave"
+"30"," Celaya, Guanajuato",-100.81129,  20.52796,-100.83629,20.45296," Celaya,
+Guanajuato"
+"31"," Centro, Tabasco", -92.93444,  17.99151, -92.95944,17.91651," Centro,
+Tabasco"
+"32"," Chalchicomula De Sesma, Puebla", -97.44449,  18.98540, -97.46949,18.91040," Chalchicomula De Sesma,
+Puebla"
+"33"," Chalco, Mexico", -98.89694,  19.26244, -98.92194,19.18744," Chalco,
+Mexico"
+"34"," Chamula, Chiapas", -92.68900,  16.78623, -92.71400,16.71123," Chamula,
+Chiapas"
+"35"," Chihuahua, Chihuahua",-106.06910,  28.63300,-106.09410,28.55800," Chihuahua,
+Chihuahua"
+"36"," Chimalhuacan, Mexico", -98.95820,  19.43140, -98.98320,19.35640," Chimalhuacan,
+Mexico"
+"37"," Cintalapa, Chiapas", -93.72856,  16.68595, -93.75356,16.61095," Cintalapa,
+Chiapas"
+"38"," Ciudad Ixtepec, Oaxaca", -95.09631,  16.56113, -95.12131,16.48613," Ciudad Ixtepec,
+Oaxaca"
+"39"," Ciudad Madero, Tamaulipas", -97.83310,  22.27688, -97.85810,22.20188," Ciudad Madero,
+Tamaulipas"
+"40"," Coatepec Harinas, Mexico", -99.76863,  18.92450, -99.79363,18.84950," Coatepec Harinas,
+Mexico"
+"41"," Coatzacoalcos, Veracruz De Ignacio De La Llave", -94.45899,  18.13448, -94.48399,18.05948," Coatzacoalcos,
+Veracruz De Ignacio De La Llave"
+"42"," Cocula, Jalisco",-103.82277,  20.36539,-103.84777,20.29039," Cocula,
+Jalisco"
+"43"," Colima, Colima",-103.72409,  19.24523,-103.74909,19.17023," Colima,
+Colima"
+"44"," Comitan De Dominguez, Chiapas", -92.11557,  16.22996, -92.14057,16.15496," Comitan De Dominguez,
+Chiapas"
+"45"," Contla De Juan Cuamatzi, Tlaxcala", -98.17051,  19.33426, -98.19551,19.25926," Contla De Juan Cuamatzi,
+Tlaxcala"
+"46"," Cordoba, Veracruz De Ignacio De La Llave", -96.92378,  18.88389, -96.94878,18.80889," Cordoba,
+Veracruz De Ignacio De La Llave"
+"47"," Cortazar, Guanajuato",-100.96375,  20.47718,-100.98875,20.40218," Cortazar,
+Guanajuato"
+"48"," Cosamaloapan De Carpio, Veracruz De Ignacio De La Llave", -95.79584,  18.36632, -95.82084,18.29132," Cosamaloapan De Carpio,
+Veracruz De Ignacio De La Llave"
+"49"," Coxcatlan, Puebla", -97.15038,  18.26554, -97.17538,18.19054," Coxcatlan,
+Puebla"
+"50"," Coyoacan, Ciudad De Mexico", -99.15619,  19.34374, -99.18119,19.26874," Coyoacan,
+Ciudad De Mexico"
+"51"," Cuajimalpa De Morelos, Ciudad De Mexico", -99.28806,  19.36314, -99.31306,19.28814," Cuajimalpa De Morelos,
+Ciudad De Mexico"
+"52"," Cuauhtemoc, Ciudad De Mexico", -99.14951,  19.43563, -99.17451,19.36063," Cuauhtemoc,
+Ciudad De Mexico"
+"53"," Cuautitlan Izcalli, Mexico", -99.22314,  19.65281, -99.24814,19.57781," Cuautitlan Izcalli,
+Mexico"
+"54"," Cuautla, Morelos", -98.95483,  18.81260, -98.97983,18.73760," Cuautla,
+Morelos"
+"55"," Cuernavaca, Morelos", -99.22157,  18.92421, -99.24657,18.84921," Cuernavaca,
+Morelos"
+"56"," Cuetzalan Del Progreso, Puebla", -97.52337,  20.01764, -97.54837,19.94264," Cuetzalan Del Progreso,
+Puebla"
+"57"," Culiacan, Sinaloa",-107.39401,  24.80906,-107.41901,24.73406," Culiacan,
+Sinaloa"
+"58"," Doctor Arroyo, Nuevo Leon",-100.18151,  23.67227,-100.20651,23.59727," Doctor Arroyo,
+Nuevo Leon"
+"59"," Dolores Hidalgo, Guanajuato",-100.93672,  21.15160,-100.96172,21.07660," Dolores Hidalgo,
+Guanajuato"
+"60"," Durango, Durango",-104.65318,  24.02772,-104.67818,23.95272," Durango,
+Durango"
+"61"," Ecatepec De Morelos, Mexico", -99.03651,  19.60577, -99.06151,19.53077," Ecatepec De Morelos,
+Mexico"
+"62"," El Barrio De La Soledad, Oaxaca", -95.11153,  16.80132, -95.13653,16.72632," El Barrio De La Soledad,
+Oaxaca"
+"63"," El Oro, Mexico",-100.13392,  19.80075,-100.15892,19.72575," El Oro,
+Mexico"
+"64"," Emiliano Zapata, Morelos", -99.18437,  18.84786, -99.20937,18.77286," Emiliano Zapata,
+Morelos"
+"65"," Ensenada, Baja California",-116.59637,  31.86674,-116.62137,31.79174," Ensenada,
+Baja California"
+"66"," Fresnillo, Zacatecas",-102.86874,  23.17776,-102.89374,23.10276," Fresnillo,
+Zacatecas"
+"67"," Galeana, Nuevo Leon",-100.07737,  24.82546,-100.10237,24.75046," Galeana,
+Nuevo Leon"
+"68"," Garcia, Nuevo Leon",-100.58620,  25.80103,-100.61120,25.72603," Garcia,
+Nuevo Leon"
+"69"," General Escobedo, Nuevo Leon",-100.31221,  25.80022,-100.33721,25.72522," General Escobedo,
+Nuevo Leon"
+"70"," Guadalajara, Jalisco",-103.34961,  20.65970,-103.37461,20.58470," Guadalajara,
+Jalisco"
+"71"," Guadalupe, Nuevo Leon",-100.21551,  25.67483,-100.24051,25.59983," Guadalupe,
+Nuevo Leon"
+"72"," Guadalupe, Zacatecas",-102.51189,  22.75658,-102.53689,22.68158," Guadalupe,
+Zacatecas"
+"73"," Gustavo A. Madero, Ciudad De Mexico", -99.12361,  19.48733, -99.14861,19.41233," Gustavo A. Madero,
+Ciudad De Mexico"
+"74"," Hermosillo, Sonora",-110.95592,  29.07297,-110.98092,28.99797," Hermosillo,
+Sonora"
+"75"," Heroica Ciudad De Huajuapan De Leon, Oaxaca", -97.78035,  17.81125, -97.80535,17.73625," Heroica Ciudad De Huajuapan De Leon,
+Oaxaca"
+"76"," Huanimaro, Guanajuato",-101.49671,  20.36703,-101.52171,20.29203," Huanimaro,
+Guanajuato"
+"77"," Huauchinango, Puebla", -98.06289,  20.17570, -98.08789,20.10070," Huauchinango,
+Puebla"
+"78"," Huehuetoca, Mexico", -99.20375,  19.82773, -99.22875,19.75273," Huehuetoca,
+Mexico"
+"79"," Huejotzingo, Puebla", -98.40472,  19.15895, -98.42972,19.08395," Huejotzingo,
+Puebla"
+"80"," Huichapan, Hidalgo", -99.65084,  20.37867, -99.67584,20.30367," Huichapan,
+Hidalgo"
+"81"," Huixquilucan, Mexico", -99.34802,  19.35963, -99.37302,19.28463," Huixquilucan,
+Mexico"
+"82"," Huixtla, Chiapas", -92.46592,  15.13766, -92.49092,15.06266," Huixtla,
+Chiapas"
+"83"," Iguala De La Independencia, Guerrero", -99.53973,  18.34485, -99.56473,18.26985," Iguala De La Independencia,
+Guerrero"
+"84"," Irapuato, Guanajuato",-101.35450,  20.67867,-101.37950,20.60367," Irapuato,
+Guanajuato"
+"85"," Isla, Veracruz De Ignacio De La Llave", -95.52806,  18.02880, -95.55306,17.95380," Isla,
+Veracruz De Ignacio De La Llave"
+"86"," Ixhuatlan Del Sureste, Veracruz De Ignacio De La Llave", -94.39256,  18.02345, -94.41756,17.94845," Ixhuatlan Del Sureste,
+Veracruz De Ignacio De La Llave"
+"87"," Ixmiquilpan, Hidalgo", -99.21712,  20.48314, -99.24212,20.40814," Ixmiquilpan,
+Hidalgo"
+"88"," Ixtapaluca, Mexico", -98.90798,  19.30905, -98.93298,19.23405," Ixtapaluca,
+Mexico"
+"89"," Ixtlahuacan, Colima",-103.73642,  18.99957,-103.76142,18.92457," Ixtlahuacan,
+Colima"
+"90"," Iztapalapa, Ciudad De Mexico", -99.07989,  19.34671, -99.10489,19.27171," Iztapalapa,
+Ciudad De Mexico"
+"91"," Izucar De Matamoros, Puebla", -98.46779,  18.59912, -98.49279,18.52412," Izucar De Matamoros,
+Puebla"
+"92"," Jalpa, Zacatecas",-102.97786,  21.63743,-103.00286,21.56243," Jalpa,
+Zacatecas"
+"93"," Jaral Del Progreso, Guanajuato",-101.06835,  20.37355,-101.09335,20.29855," Jaral Del Progreso,
+Guanajuato"
+"94"," Jerez, Zacatecas",-102.98762,  22.64687,-103.01262,22.57187," Jerez,
+Zacatecas"
+"95"," Jojutla, Morelos", -99.17812,  18.61442, -99.20312,18.53942," Jojutla,
+Morelos"
+"96"," Jonacatepec, Morelos", -98.80045,  18.68686, -98.82545,18.61186," Jonacatepec,
+Morelos"
+"97"," Juarez, Chihuahua",-106.42455,  31.69036,-106.51477,31.68128," Juarez,
+Chihuahua"
+"98"," Juchipila, Zacatecas",-103.11755,  21.41191,-103.14255,21.33691," Juchipila,
+Zacatecas"
+"99"," La Magdalena Contreras, Ciudad De Mexico", -99.24259,  19.31496, -99.26759,19.23996," La Magdalena Contreras,
+Ciudad De Mexico"
+"100"," La Paz, Baja California Sur",-110.31275,  24.14264,-110.33775,24.06764," La Paz,
+Baja California Sur"
+"101"," La Paz, Mexico",-110.31275,  24.14264,-110.33775,24.06764," La Paz,
+Mexico"
+"102"," Las Choapas, Veracruz De Ignacio De La Llave", -94.09304,  17.91567, -94.11804,17.84067," Las Choapas,
+Veracruz De Ignacio De La Llave"
+"103"," Las Margaritas, Chiapas", -91.98795,  16.31547, -92.01295,16.24047," Las Margaritas,
+Chiapas"
+"104"," Lazaro Cardenas, Michoacan De Ocampo",-102.19435,  17.95676,-102.21935,17.88176," Lazaro Cardenas,
+Michoacan De Ocampo"
+"105"," Leon, Guanajuato",-101.68596,  21.12501,-101.71096,21.05001," Leon,
+Guanajuato"
+"106"," Lerma, Mexico", -99.52447,  19.29134, -99.54947,19.21634," Lerma,
+Mexico"
+"107"," Libres, Puebla", -97.68750,  19.46532, -97.71250,19.39032," Libres,
+Puebla"
+"108"," Linares, Nuevo Leon", -99.56178,  24.86395, -99.58678,24.78895," Linares,
+Nuevo Leon"
+"109"," Loreto, Zacatecas",-101.98902,  22.27154,-102.01402,22.19654," Loreto,
+Zacatecas"
+"110"," Los Cabos, Baja California Sur",-109.91674,  22.89053,-109.94174,22.81553," Los Cabos,
+Baja California Sur"
+"111"," Los Mochis, Sinaloa",-108.98588,  25.79047,-109.01088,25.71547," Los Mochis,
+Sinaloa"
+"112"," Malinalco, Mexico", -99.49358,  18.94839, -99.51858,18.87339," Malinalco,
+Mexico"
+"113"," Manzanillo, Colima",-104.33846,  19.11381,-104.36346,19.03881," Manzanillo,
+Colima"
+"114"," Matamoros, Tamaulipas", -97.50274,  25.86903, -97.52774,25.79403," Matamoros,
+Tamaulipas"
+"115"," Mazatlan, Sinaloa",-106.41114,  23.24941,-106.43614,23.17441," Mazatlan,
+Sinaloa"
+"116"," Mecayapan, Veracruz De Ignacio De La Llave", -94.83827,  18.22103, -94.86327,18.14603," Mecayapan,
+Veracruz De Ignacio De La Llave"
+"117"," Merida, Yucatan", -89.59259,  20.96737, -89.61759,20.89237," Merida,
+Yucatan"
+"118"," Metepec, Mexico", -99.59855,  19.25289, -99.62355,19.17789," Metepec,
+Mexico"
+"119"," Mexicali, Baja California",-115.45226,  32.62454,-115.52059,32.55628," Mexicali,
+Baja California"
+"120"," Miguel Aleman, Tamaulipas", -99.05711,  26.18088, -99.08211,26.10588," Miguel Aleman,
+Tamaulipas"
+"121"," Miguel Hidalgo, Ciudad De Mexico", -99.20840,  19.43066, -99.23340,19.35566," Miguel Hidalgo,
+Ciudad De Mexico"
+"122"," Minatitlan, Veracruz De Ignacio De La Llave", -94.54661,  17.99392, -94.57161,17.91892," Minatitlan,
+Veracruz De Ignacio De La Llave"
+"123"," Montemorelos, Nuevo Leon", -99.83630,  25.18892, -99.86130,25.11392," Montemorelos,
+Nuevo Leon"
+"124"," Monterrey, Nuevo Leon",-100.31611,  25.68661,-100.34111,25.61161," Monterrey,
+Nuevo Leon"
+"125"," Morelia, Michoacan De Ocampo",-101.19498,  19.70595,-101.21998,19.63095," Morelia,
+Michoacan De Ocampo"
+"126"," Moroleon, Guanajuato",-101.19334,  20.12646,-101.21834,20.05146," Moroleon,
+Guanajuato"
+"127"," Nanchital De Lazaro Cardenas Del Rio, Veracruz De Ignacio De La Llave", -94.40830,  18.07146, -94.43330,17.99646," Nanchital De Lazaro Cardenas Del Rio,
+Veracruz De Ignacio De La Llave"
+"128"," Naolinco, Veracruz De Ignacio De La Llave", -96.86995,  19.65482, -96.89495,19.57982," Naolinco,
+Veracruz De Ignacio De La Llave"
+"129"," Naucalpan De Juarez, Mexico", -99.24530,  19.46308, -99.27030,19.38808," Naucalpan De Juarez,
+Mexico"
+"130"," Naucalpan, Mexico", -99.24530,  19.46308, -99.27030,19.38808," Naucalpan,
+Mexico"
+"131"," Navojoa, Sonora",-109.44375,  27.07276,-109.46875,26.99776," Navojoa,
+Sonora"
+"132"," Nezahualcoyotl, Mexico", -98.98966,  19.39949, -99.01466,19.32449," Nezahualcoyotl,
+Mexico"
+"133"," Nogales, Sonora",-110.93810,  31.30119,-110.96310,31.22619," Nogales,
+Sonora"
+"134"," Nuevo Laredo, Tamaulipas", -99.54957,  27.47794, -99.57457,27.40294," Nuevo Laredo,
+Tamaulipas"
+"135"," Oaxaca De Juarez, Oaxaca", -96.72659,  17.07318, -96.75159,16.99818," Oaxaca De Juarez,
+Oaxaca"
+"136"," Ocosingo, Chiapas", -92.09434,  16.90873, -92.11934,16.83373," Ocosingo,
+Chiapas"
+"137"," Ocuituco, Morelos", -98.77393,  18.87766, -98.79893,18.80266," Ocuituco,
+Morelos"
+"138"," Ojocaliente, Zacatecas",-102.25467,  22.57060,-102.27967,22.49560," Ojocaliente,
+Zacatecas"
+"139"," Orizaba, Veracruz De Ignacio De La Llave", -97.10364,  18.85047, -97.12864,18.77547," Orizaba,
+Veracruz De Ignacio De La Llave"
+"140"," Othon P. Blanco, Quintana Roo", -88.29611,  18.50025, -88.32111,18.42525," Othon P. Blanco,
+Quintana Roo"
+"141"," Pabellon De Arteaga, Aguascalientes",-102.27482,  22.14447,-102.29982,22.06947," Pabellon De Arteaga,
+Aguascalientes"
+"142"," Pachuca De Soto, Hidalgo", -98.75913,  20.10106, -98.78413,20.02606," Pachuca De Soto,
+Hidalgo"
+"143"," Pahuatlan, Puebla", -98.15016,  20.27693, -98.17516,20.20193," Pahuatlan,
+Puebla"
+"144"," Patzcuaro, Michoacan De Ocampo",-101.60919,  19.51345,-101.63419,19.43845," Patzcuaro,
+Michoacan De Ocampo"
+"145"," Penjamo, Guanajuato",-101.72406,  20.43135,-101.74906,20.35635," Penjamo,
+Guanajuato"
+"146"," Perote, Veracruz De Ignacio De La Llave", -97.24641,  19.55724, -97.27141,19.48224," Perote,
+Veracruz De Ignacio De La Llave"
+"147"," Piedras Negras, Coahuila De Zaragoza",-100.54086,  28.69162,-100.56586,28.61662," Piedras Negras,
+Coahuila De Zaragoza"
+"148"," Platon Sanchez, Veracruz De Ignacio De La Llave", -98.37731,  21.27559, -98.40231,21.20059," Platon Sanchez,
+Veracruz De Ignacio De La Llave"
+"149"," Playas De Rosarito, Baja California",-117.06176,  32.36610,-117.08676,32.29110," Playas De Rosarito,
+Baja California"
+"150"," Poza Rica De Hidalgo, Veracruz De Ignacio De La Llave", -97.46291,  20.52706, -97.48791,20.45206," Poza Rica De Hidalgo,
+Veracruz De Ignacio De La Llave"
+"151"," Puebla, Puebla", -98.20627,  19.04144, -98.23127,18.96644," Puebla,
+Puebla"
+"152"," Puente De Ixtla, Morelos", -99.32015,  18.61469, -99.34515,18.53969," Puente De Ixtla,
+Morelos"
+"153"," Puerto Vallarta, Jalisco",-105.22533,  20.65341,-105.25033,20.57841," Puerto Vallarta,
+Jalisco"
+"154"," Puruandiro, Michoacan De Ocampo",-101.51570,  20.08801,-101.54070,20.01301," Puruandiro,
+Michoacan De Ocampo"
+"155"," Queretaro, Queretaro De Arteaga",-100.38989,  20.58879,-100.41489,20.51379," Queretaro,
+Queretaro De Arteaga"
+"156"," Quiroga, Michoacan De Ocampo",-101.52328,  19.66480,-101.54828,19.58980," Quiroga,
+Michoacan De Ocampo"
+"157"," Reynosa, Tamaulipas", -98.29790,  26.05084, -98.32290,25.97584," Reynosa,
+Tamaulipas"
+"158"," Rincon De Romos, Aguascalientes",-102.32062,  22.22891,-102.34562,22.15391," Rincon De Romos,
+Aguascalientes"
+"159"," Romita, Guanajuato",-101.51686,  20.87089,-101.54186,20.79589," Romita,
+Guanajuato"
+"160"," Sabinas Hidalgo, Nuevo Leon",-100.17593,  26.50880,-100.20093,26.43380," Sabinas Hidalgo,
+Nuevo Leon"
+"161"," Salamanca, Guanajuato",-101.19572,  20.57393,-101.22072,20.49893," Salamanca,
+Guanajuato"
+"162"," Salina Cruz, Oaxaca", -95.20876,  16.18428, -95.23376,16.10928," Salina Cruz,
+Oaxaca"
+"163"," Saltillo, Coahuila De Zaragoza",-100.97368,  25.43832,-100.99868,25.36332," Saltillo,
+Coahuila De Zaragoza"
+"164"," Salvatierra, Guanajuato",-100.88184,  20.20900,-100.90684,20.13400," Salvatierra,
+Guanajuato"
+"165"," San Agustin Tlaxiaca, Hidalgo", -98.88315,  20.11551, -98.90815,20.04051," San Agustin Tlaxiaca,
+Hidalgo"
+"166"," San Andres Cholula, Puebla", -98.29491,  19.05996, -98.31991,18.98496," San Andres Cholula,
+Puebla"
+"167"," San Bartolo Coyotepec, Oaxaca", -96.70793,  16.95419, -96.73293,16.87919," San Bartolo Coyotepec,
+Oaxaca"
+"168"," San Cristobal De Las Casas, Chiapas", -92.63760,  16.73699, -92.66260,16.66199," San Cristobal De Las Casas,
+Chiapas"
+"169"," San Jose Chiapa, Puebla", -97.76772,  19.23884, -97.79272,19.16384," San Jose Chiapa,
+Puebla"
+"170"," San Jose Iturbide, Guanajuato",-100.38629,  20.99867,-100.41129,20.92367," San Jose Iturbide,
+Guanajuato"
+"171"," San Juan Bautista Tuxtepec, Oaxaca", -96.14209,  18.08090, -96.16709,18.00590," San Juan Bautista Tuxtepec,
+Oaxaca"
+"172"," San Luis De La Paz, Guanajuato",-100.52399,  21.29340,-100.54899,21.21840," San Luis De La Paz,
+Guanajuato"
+"173"," San Luis Potosi, San Luis Potosi",-100.98554,  22.15647,-101.01054,22.08147," San Luis Potosi,
+San Luis Potosi"
+"174"," San Luis Rio Colorado, Sonora",-114.77171,  32.45189,-114.79671,32.37689," San Luis Rio Colorado,
+Sonora"
+"175"," San Martin Texmelucan, Puebla", -98.43487,  19.28438, -98.45987,19.20938," San Martin Texmelucan,
+Puebla"
+"176"," San Miguel De Allende, Guanajuato",-100.74523,  20.91445,-100.77023,20.83945," San Miguel De Allende,
+Guanajuato"
+"177"," San Miguel El Alto, Jalisco",-102.40403,  21.02976,-102.42903,20.95476," San Miguel El Alto,
+Jalisco"
+"178"," San Nicolas De Los Garza, Nuevo Leon",-100.28690,  25.74935,-100.31190,25.67435," San Nicolas De Los Garza,
+Nuevo Leon"
+"179"," San Pablo Huixtepec, Oaxaca", -96.78420,  16.82106, -96.80920,16.74606," San Pablo Huixtepec,
+Oaxaca"
+"180"," San Pedro Garza Garcia, Nuevo Leon",-100.40175,  25.65734,-100.42675,25.58234," San Pedro Garza Garcia,
+Nuevo Leon"
+"181"," San Pedro Mixtepec - Distr. 22 -, Oaxaca", -97.07943,  15.97992, -97.10443,15.90492," San Pedro Mixtepec - Distr. 22 -,
+Oaxaca"
+"182"," Santa Cruz De Juventino Rosas, Guanajuato",-100.99329,  20.64403,-101.01829,20.56903," Santa Cruz De Juventino Rosas,
+Guanajuato"
+"183"," Santos Reyes Nopala, Oaxaca", -97.14356,  16.10706, -97.16856,16.03206," Santos Reyes Nopala,
+Oaxaca"
+"184"," Silao, Guanajuato",-101.42824,  20.95214,-101.45324,20.87714," Silao,
+Guanajuato"
+"185"," Sinaloa, Sinaloa",-108.22167,  25.82269,-108.24667,25.74769," Sinaloa,
+Sinaloa"
+"186"," Soledad De Graciano Sanchez, San Luis Potosi",-100.94178,  22.18070,-100.96678,22.10570," Soledad De Graciano Sanchez,
+San Luis Potosi"
+"187"," Solidaridad, Quintana Roo", -87.07796,  20.63511, -87.10296,20.56011," Solidaridad,
+Quintana Roo"
+"188"," Tabasco, Zacatecas",-102.91306,  21.86526,-102.93806,21.79026," Tabasco,
+Zacatecas"
+"189"," Tamazulapam Del Espiritu Santo, Oaxaca", -96.06461,  17.05439, -96.08961,16.97939," Tamazulapam Del Espiritu Santo,
+Oaxaca"
+"190"," Tampico, Tamaulipas", -97.86110,  22.23310, -97.88610,22.15810," Tampico,
+Tamaulipas"
+"191"," Tapachula, Chiapas", -92.26342,  14.90556, -92.28842,14.83056," Tapachula,
+Chiapas"
+"192"," Tecamachalco, Puebla", -97.73273,  18.88191, -97.75773,18.80691," Tecamachalco,
+Puebla"
+"193"," Tecoman, Colima",-103.87380,  18.91738,-103.89880,18.84238," Tecoman,
+Colima"
+"194"," Tecomatlan, Puebla", -98.31315,  18.10789, -98.33815,18.03289," Tecomatlan,
+Puebla"
+"195"," Tehuacan, Puebla", -97.40038,  18.46651, -97.42538,18.39151," Tehuacan,
+Puebla"
+"196"," Temixco, Morelos", -99.23937,  18.85930, -99.26437,18.78430," Temixco,
+Morelos"
+"197"," Tenancingo, Mexico", -99.59107,  18.96134, -99.61607,18.88634," Tenancingo,
+Mexico"
+"198"," Tepatitlan De Morelos, Jalisco",-102.76244,  20.81670,-102.78744,20.74170," Tepatitlan De Morelos,
+Jalisco"
+"199"," Tepeaca, Puebla", -97.89938,  18.96596, -97.92438,18.89096," Tepeaca,
+Puebla"
+"200"," Tepic, Nayarit",-104.89459,  21.50417,-104.91959,21.42917," Tepic,
+Nayarit"
+"201"," Tetecala, Morelos", -99.39789,  18.72741, -99.42289,18.65241," Tetecala,
+Morelos"
+"202"," Tetela De Ocampo, Puebla", -97.80960,  19.81158, -97.83460,19.73658," Tetela De Ocampo,
+Puebla"
+"203"," Teziutlan, Puebla", -97.35706,  19.81601, -97.38206,19.74101," Teziutlan,
+Puebla"
+"204"," Tezonapa, Veracruz De Ignacio De La Llave", -96.68720,  18.60217, -96.71220,18.52717," Tezonapa,
+Veracruz De Ignacio De La Llave"
+"205"," Tierra Blanca, Veracruz De Ignacio De La Llave", -96.35984,  18.44583, -96.38484,18.37083," Tierra Blanca,
+Veracruz De Ignacio De La Llave"
+"206"," Tijuana, Baja California",-117.03825,  32.51495,-117.15825,32.43995," Tijuana,
+Baja California"
+"207"," Tlacotepec De Benito Juarez, Puebla", -97.64832,  18.68163, -97.67332,18.60663," Tlacotepec De Benito Juarez,
+Puebla"
+"208"," Tlajomulco De Zuniga, Jalisco",-103.44793,  20.47369,-103.47293,20.39869," Tlajomulco De Zuniga,
+Jalisco"
+"209"," Tlalixcoyan, Veracruz De Ignacio De La Llave", -96.06130,  18.80297, -96.08630,18.72797," Tlalixcoyan,
+Veracruz De Ignacio De La Llave"
+"210"," Tlalnepantla De Baz, Mexico", -99.19074,  19.53453, -99.21574,19.45953," Tlalnepantla De Baz,
+Mexico"
+"211"," Tlalpan, Ciudad De Mexico", -99.21142,  19.27909, -99.23642,19.20409," Tlalpan,
+Ciudad De Mexico"
+"212"," Tlaola, Puebla", -97.92253,  20.13521, -97.94753,20.06021," Tlaola,
+Puebla"
+"213"," Tlapacoyan, Veracruz De Ignacio De La Llave", -97.21406,  19.96094, -97.23906,19.88594," Tlapacoyan,
+Veracruz De Ignacio De La Llave"
+"214"," Tlaquepaque, Jalisco",-103.32122,  20.62431,-103.34622,20.54931," Tlaquepaque,
+Jalisco"
+"215"," Tlatlauquitepec, Puebla", -97.49720,  19.84635, -97.52220,19.77135," Tlatlauquitepec,
+Puebla"
+"216"," Toluca, Mexico", -99.65567,  19.28261, -99.68067,19.20761," Toluca,
+Mexico"
+"217"," Torreon, Coahuila De Zaragoza",-103.40679,  25.54284,-103.43179,25.46784," Torreon,
+Coahuila De Zaragoza"
+"218"," Tula De Allende, Hidalgo", -99.34425,  20.05221, -99.36925,19.97721," Tula De Allende,
+Hidalgo"
+"219"," Tulancingo De Bravo, Hidalgo", -98.36909,  20.09048, -98.39409,20.01548," Tulancingo De Bravo,
+Hidalgo"
+"220"," Tultitlan, Mexico", -99.16686,  19.63921, -99.19186,19.56421," Tultitlan,
+Mexico"
+"221"," Tuxpan, Veracruz De Ignacio De La Llave", -97.40634,  20.95611, -97.43134,20.88111," Tuxpan,
+Veracruz De Ignacio De La Llave"
+"222"," Tuxtla Gutierrez, Chiapas", -93.10299,  16.75160, -93.12799,16.67660," Tuxtla Gutierrez,
+Chiapas"
+"223"," Tuzantla, Michoacan De Ocampo",-100.57538,  19.20667,-100.60038,19.13167," Tuzantla,
+Michoacan De Ocampo"
+"224"," Uriangato, Guanajuato",-101.17873,  20.14620,-101.20373,20.07120," Uriangato,
+Guanajuato"
+"225"," Uruapan, Michoacan De Ocampo",-102.04305,  19.40645,-102.06805,19.33145," Uruapan,
+Michoacan De Ocampo"
+"226"," Valladolid, Yucatan", -88.20225,  20.68964, -88.22725,20.61464," Valladolid,
+Yucatan"
+"227"," Valle De Chalco Solidaridad, Mexico", -98.93883,  19.29187, -98.96383,19.21687," Valle De Chalco Solidaridad,
+Mexico"
+"228"," Venustiano Carranza, Ciudad De Mexico", -99.09499,  19.43061, -99.11999,19.35561," Venustiano Carranza,
+Ciudad De Mexico"
+"229"," Venustiano Carranza, Puebla", -97.67120,  20.50778, -97.69620,20.43278," Venustiano Carranza,
+Puebla"
+"230"," Veracruz, Veracruz De Ignacio De La Llave", -96.13422,  19.17377, -96.15922,19.09877," Veracruz,
+Veracruz De Ignacio De La Llave"
+"231"," Vicente Guerrero, Puebla", -97.19713,  18.54220, -97.22213,18.46720," Vicente Guerrero,
+Puebla"
+"232"," Victoria, Tamaulipas", -99.14112,  23.73692, -99.16612,23.66192," Victoria,
+Tamaulipas"
+"233"," Villa De Cos, Zacatecas",-102.35000,  23.29436,-102.37500,23.21936," Villa De Cos,
+Zacatecas"
+"234"," Villa Sola De Vega, Oaxaca", -96.97947,  16.51162, -97.00447,16.43662," Villa Sola De Vega,
+Oaxaca"
+"235"," Villaflores, Chiapas", -93.27345,  16.23297, -93.29845,16.15797," Villaflores,
+Chiapas"
+"236"," Villagran, Guanajuato",-100.99483,  20.51341,-101.01983,20.43841," Villagran,
+Guanajuato"
+"237"," Xalapa, Veracruz De Ignacio De La Llave", -96.91018,  19.54378, -96.93518,19.46878," Xalapa,
+Veracruz De Ignacio De La Llave"
+"238"," Xicotepec, Puebla", -97.96426,  20.27862, -97.98926,20.20362," Xicotepec,
+Puebla"
+"239"," Xochimilco, Ciudad De Mexico", -99.10297,  19.25723, -99.12797,19.18223," Xochimilco,
+Ciudad De Mexico"
+"240"," Yahualica De Gonzalez Gallo, Jalisco",-102.88312,  21.17828,-102.90812,21.10328," Yahualica De Gonzalez Gallo,
+Jalisco"
+"241"," Yautepec, Morelos", -99.06264,  18.88916, -99.08764,18.81416," Yautepec,
+Morelos"
+"242"," Zacapoaxtla., Puebla", -97.58880,  19.87351, -97.61380,19.79851," Zacapoaxtla.,
+Puebla"
+"243"," Zacapu, Michoacan De Ocampo",-101.79567,  19.81251,-101.82067,19.73751," Zacapu,
+Michoacan De Ocampo"
+"244"," Zacatecas, Zacatecas",-102.58656,  22.76420,-102.61156,22.68920," Zacatecas,
+Zacatecas"
+"245"," Zacatlan, Puebla", -97.96115,  19.93508, -97.98615,19.86008," Zacatlan,
+Puebla"
+"246"," Zacualpan, Mexico", -99.77818,  18.71944, -99.80318,18.64444," Zacualpan,
+Mexico"
+"247"," Zamora, Michoacan De Ocampo",-102.28341,  19.99018,-102.30841,19.91518," Zamora,
+Michoacan De Ocampo"
+"248"," Zapopan, Jalisco",-103.41650,  20.67196,-103.44150,20.59696," Zapopan,
+Jalisco"
+"249"," Zapotlan El Grande, Jalisco",-103.46472,  19.70361,-103.48972,19.62861," Zapotlan El Grande,
+Jalisco"
+"250"," Zitacuaro, Michoacan De Ocampo",-100.35587,  19.43761,-100.38087,19.36261," Zitacuaro,
+Michoacan De Ocampo"
+"251","Guadalajara, Jalisco",-103.34961,  20.65970,-103.37461,20.58470,"Guadalajara,
+Jalisco"
+"252","Zapopan, Jalisco",-103.41650,  20.67196,-103.44150,20.59696,"Zapopan,
+Jalisco"

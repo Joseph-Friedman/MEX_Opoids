@@ -1,0 +1,41 @@
+Group,Death/Prevalence,GBD Columns1,GBD Columns,Lancet groups,GBD 2017 Codes,Weight_palliative_care_need,Prop_need_opioid,Days_opioid,Morphine,Notes
+1,Death,NULL,NULL,NULL,"A96,98,99: Hemorrhagic fevers",1,0.6,7,40,
+2,Death,"c(""Tuberculosis"")*.026",Tuberculosis,MDR-Death,"A15-19: TB / the 13% of deaths (190,000)from M/XDR TB (100% of those)",0.026,0.75,270,240,
+2a,Prevalence,"c(""Tuberculosis"")*.026",Tuberculosis,MDR-Prev,"A15-19: TB / the 80,000 with M/XDR TBon treatment who have not died (100%of those)",0.026,0.6,45,90,Preavlence of MDR TB https://extranet.who.int/sree/Reports?op=Replet&name=/WHO_HQ_Reports/G2/PROD/EXT/TBCountryProfile&ISO2=MX&outtype=html
+2b,Death,"c(""Tuberculosis"")*.984",Tuberculosis,TB-Death,"A15-19: TB / the 87% (1.3 million) whodied from TB that was NOT MDR (90% ofthose)",0.8856,0.2,14,21,
+3,Death,"c(""HIV/AIDS"")",HIV/AIDS,HIV-Death,B20-24: HIV disease / 100%,1,0.9,160,540,
+3a,Prevalence,"c(""HIV/AIDS"")",HIV/AIDS,HIV-Prev,B20-24: HIV disease - nondecedent,0.5,0.5,160,150,
+4,Death,"c(""Neoplasms"")",Neoplasms,Cancer-Death,"C00-97: Malignant neoplasms (exceptC91-95)",0.9,0.9,150,8100,
+4a,Prevalence,"c(""Neoplasms"")",Neoplasms,Cancer-Prev,C00-97: Malignant neoplasms (except C9,0.3,0.35,150,480,
+5,Death,NULL,NULL,NULL,C91-95: Leukemia,0.9,0.9,90,900,Included in neoplasms
+6,Death,"c(""Alzheimer's disease and other dementias"")",Alzheimer's disease and other dementias,Dementia-Death,F00-04: Dementia,0.8,0.3,120,180,
+6a,Prevalence,"c(""Alzheimer's disease and other dementias"")",Alzheimer's disease and other dementias,Dementia-Prev,F00-04: Dementia - nondecedents,0.4,0.15,60,10,
+7,Death,"c(""Encephalitis"")",Encephalitis,CNS-Death,G00-09: Inflammatory dz of CNS,0.3,0.35,15,120,
+7,Death,"c(""Syphilis"")",Syphilis,CNS-Death,G00-09: Inflammatory dz of CNS,0.7,0.35,15,120,
+7,Death,"c(""Measles"")",Measles,CNS-Death,G00-09: Inflammatory dz of CNS,0.5,0.35,15,120,
+7,Death,"c(""Tetanus"")",Tetanus,CNS-Death,G00-09: Inflammatory dz of CNS,1,0.35,15,120,
+7,Death,"c(""Rabies"")",Rabies,CNS-Death,G00-09: Inflammatory dz of CNS,0.9,0.35,15,120,
+7,Death,"c(""African trypanosomiasis"")",African trypanosomiasis,CNS-Death,G00-09: Inflammatory dz of CNS,1,0.35,15,120,
+8,Death,"c(""Parkinson's disease"")",Parkinson's disease,Extrapyr-Death,"G20-26; G30-32; G35-37; G40-41; G80-83Extrapyramidal & mvt disorders; otherdegen dz of CNS; Demyelinating  dz ofCNS; Epilepsy; Cerebral palsy & otherparalytic syndromes /",0.65,0.5,120,240,
+8,Death,"c(""Multiple sclerosis"")",Multiple sclerosis,,,1,0.5,120,240,
+8,Death,"c(""Other neurological disorders"")",Other neurological disorders,,,0.65,0.5,120,240,
+8a,Prevalence,"c(""Parkinson's disease"")",Parkinson's disease,,Parkinsons - nondecedents,0.4,0.33,90,30,
+8b,Prevalence,"c(""Multiple sclerosis"")",Multiple sclerosis,,Multiple sclerosis - nondecedents,0.34,0.5,120,80,
+9,NULL,NULL,NULL,,I60-69: Cerebrovascular diseases,0.65,0.5,60,90,
+9a,NULL,NULL,NULL,,I60-69: Cerebrovascular diseases - nonde,0.15,0.33,90,10,
+10,NULL,NULL,NULL,,"I05-09; I25; I42 & I50: Chronic rheumaticheart diseases; Cardiomyopathy &Heart failure",0.65,0.65,60,360,
+11,Death,"c(""Cardiovascular diseases"")",Cardiovascular diseases,,I25:  Chronic ischemic heart disease,0.3,0.9,120,360,
+12,Death,"c(""Chronic respiratory diseases"")",Chronic respiratory diseases,,"J40-47; J60-70; J80-84; J95-99: Chroniclower respiratory dz; lung dz due toexternal agents; interstitial lung dz;other dz of resp system",0.8,0.25,120,360,
+13,Death,"c(""Cirrhosis and other chronic liver diseases"")",Cirrhosis and other chronic liver diseases,,K70-77: Diseases of liver,0.95,0.65,90,180,
+,Death,"c(""Other digestive diseases"",""Schistosomiasis"")",Other digestive diseases,,K70-77: Diseases of liver,0.28,0.65,90,180,
+14,Death,"c(""Chronic kidney disease"")",Chronic kidney disease,,N17-19: Renal failure,0.45,0.4,30,180,
+15,Death,"c(""Neonatal preterm birth"" )",Neonatal preterm birth,,"P07; P10-15: Low birth weight &prematurity; Birth trauma",1,0.5,15,0,
+16,Death,"c(""Congenital birth defects"")",Congenital birth defects,,Q00-99: Congenital malformations,0.6,0.5,30,24,
+16a,Prevalence,"c(""Congenital birth defects"")",Congenital birth defects,,Q00-99: Congenital malformations - nondecedents,0.6,0.25,60,0,
+17,Prevalence,"c(""Injuries"")",Injuries,,"S00-99; T00-98; V01-Y98: Injury,poisoning, external causes",0.6,0.8,15,300,
+17,Death,"c(""Injuries"")",Injuries,,"S00-99; T00-98; V01-Y98: Injury,poisoning, external causes",0.3,0.8,15,300,
+18,NULL,NULL,NULL,,I70: Athrosclerosis,0.35,0.67,120,180,
+19,Prevalence,"c(""Musculoskeletal disorders"")",Musculoskeletal disorders,,M00-97: Musculoskeletal disorders,1,0.7,360,360,
+,Death,"c(""Musculoskeletal disorders"")",Musculoskeletal disorders,,M00-97: Musculoskeletal disorders,0.7,0.7,360,360,
+20,Death,"c(""Protein-energy malnutrition"")",Protein-energy malnutrition,,E40-46: Malnutrition,1,0.2,5,2,
+,,,,,Source,Section 1.1.3,Table 1F,Table 1F,Table 2B,
