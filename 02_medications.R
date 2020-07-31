@@ -205,13 +205,3 @@ ggplot(df.filter %>% filter(!Med4 == "Hydromorphone"), aes(x=day, group=Med4, fi
 ggsave("Images/Figure 2 - Densities.png", dpi = 300)
 
 
-#Ridge plot
-ggplot(df.filter, aes(x=day, y=Med4, group=Med4, fill=stat(x))) +
-  geom_density_ridges_gradient(scale = 2, size = 0.50, rel_min_height = 0.03) +
-  theme_minimal() +
-  #scale_x_date(date_breaks = "1 year", date_labels = "%Y", limits = as.Date(c("2015-08-01","2019-11-01"))) + 
-  scale_y_discrete(
-    breaks = c("Morphine", "Fentanyl", "Tapentadol", "Methadone", "Oxycodone", "Hydromorphone")) +
-  labs(x="Date", y="Medication", legend = "Medication") +
-  scale_fill_viridis_c(option = "D") +
-  coord_cartesian(clip = "off")
