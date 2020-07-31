@@ -47,7 +47,7 @@ names(ageb.est@data) <- c("CVE_AGEB", "CVEGEO", "CVE_ENT", "CVE_MUN", "CVE_LOC",
                           "LUGAR_EDO", "LUGAR_NAC", "total_n", "SES", "localGvalues", 
                           "localGvalues.est.num", "KNN", "dist_num.sy", "time_mins.sy", "dist_num.otay",      
                           "time_mins.otay", "dist_num.west", "time_mins.west", "dist_num.east", "time_mins.east", 
-                          "dist_num", "time_mins", "X", "establecimientos.num")
+                          "dist_num", "time_mins")
 ageb.est@data$SES <- factor(ageb.est@data$SES, levels = c("Very high", "High", "Medium", "Low", "Very low"))
 
 
