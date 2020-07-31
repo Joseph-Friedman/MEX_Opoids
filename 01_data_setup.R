@@ -2,7 +2,6 @@
 rm(list = ls())
 pacman::p_load(data.table, tidyverse,stringr,stringi,DT,expss,reshape,reshape2,readxl,hablar,skimr,fuzzyjoin,ggmap,spdep,maptools)
 
-
 df <- read_excel('anexo-15118-19.xlsx', 
                  sheet = 3)
 colnames(df)[4] <- "Year"
@@ -19,9 +18,6 @@ df$Municipio <- sub('[^A-Za-z]+', ' ', df$Municipio)
 df$Municipio <- str_to_upper(df$Municipio)
 
 df.establecimiento <- df %>% group_by(Establecimiento, Municipio, Estado) %>% summarise(total_n=sum(n)) %>% ungroup
-
-
-#https://cengel.github.io/rspatial/5_Geocoding.nb.html
 df.establecimientos <- df.establecimiento
 
 #Get pharmacy coordinates
@@ -182,7 +178,7 @@ ageb.shp <- readOGR("IMU_2010/IMU_2010.shp")
 ageb.shp.epsg <- spTransform(ageb.shp, CRS("+proj=longlat +datum=WGS84")) #switch to long/lat as was projected
 
 #Shp pharmacy coordinates
-df.filter.na <- df.filter %>% drop_na
+df.filter.na <- df.establecimientos %>% drop_na(lon)
 coordinates(df.filter.na) <- ~lon+lat
 dat <- SpatialPointsDataFrame(df.filter.na,data.frame(id=1:length(df.filter.na)))
 proj4string(dat) <- CRS("+proj=longlat +ellps=WGS84") 
@@ -243,9 +239,7 @@ ageb.est <- merge(x=ageb.est, y=df.AGEB.centers.tj[,c(3,28:31)], by=c("CVEGEO"),
 ageb.est <- merge(x=ageb.est, y=df.AGEB.centers.mxl[,c(4,33:36)], by="CVEGEO", all.x=T)
 ageb.est <- merge(x=ageb.est, y=df.AGEB.centers.juarez[,c(3,36:37)], by="CVEGEO", all.x=T)
 
-#Merge establecimientos and replace NA
-ageb.est <- merge(x=ageb.est, y=df.denue.establecimientos, by="CVE_AGEB", all.x=T)
-ageb.est@data$establecimientos.num <- ageb.est@data$establecimientos.num %>% tidyr::replace_na(0)
+#Replace NA in total number of pharmacies per ageb
 ageb.est@data$total_n <- ageb.est@data$total_n %>% tidyr::replace_na(0)
 
 #Save ageb_est
