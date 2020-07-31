@@ -1,10 +1,23 @@
 # Setup
 #Get travel time from google
+library(tidyverse)
+library(sp)
+library(rgeos)
 library(devtools)
 #install_github("DerekYves/placement")
 library(placement)
-register_google("") #Insert Google API here
+#register_google("") #Insert Google API here
 
+#Load ageb.est
+ageb.est <- readOGR("/Users/davigood/Box Sync/UCLA/2017_Opioids Mexico/COFEPRIS/Scripts/AGEB_EST/ageb.est.shp")
+names(ageb.est@data) <- c("CVE_AGEB", "CVEGEO", "CVE_ENT", "CVE_MUN", "CVE_LOC", "POB_2010", 
+                          "IND1", "IND2", "IND3", "IND4", "IND5", "IND6", "IND7", "IND8",
+                          "IND9", "IND10", "CVE_SUN", "NOM_SUN", "IMU2010", "GMU2010", 
+                          "LUGAR_EDO", "LUGAR_NAC", "total_n", "SES", "localGvalues", 
+                          "localGvalues.est.num", "KNN", "dist_num.sy", "time_mins.sy", "dist_num.otay",      
+                          "time_mins.otay", "dist_num.west", "time_mins.west", "dist_num.east", "time_mins.east", 
+                          "dist_num", "time_mins")
+ageb.est@data$SES <- factor(ageb.est@data$SES, levels = c("Very high", "High", "Medium", "Low", "Very low"))
 
 # Get distance to Border by AGEB, eval=FALSE, include=FALSE}
 #Get centroind lat/lon
