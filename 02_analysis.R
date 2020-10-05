@@ -190,8 +190,8 @@ total_n_mexico/119530753 * 10000 #Rate for entire country over study period
 kable(df.month.estado.total %>% arrange(desc(Rate)) %>% dplyr::select(Estado1, Rate),
       format = "html", # default
       digits = 1,        # specify decimal places
-      caption = "Table. Federal entity rates of group I medication dispensing in Mexico between 8/2015 and 10/2019",
-      col.names = c("Federal entity", "Rate per 10,000"),
+      caption = "Table. Rates of group I medication dispensing by state in Mexico between 8/2015 and 10/2019",
+      col.names = c("State", "Rate per 10,000"),
       align = c("l", "c")) %>% 
   row_spec(1:nrow(df.month.estado.total), color = "black") %>%
   kable_styling(bootstrap_options = c("striped", "hover",  "condensed", "responsive")) %>%
@@ -204,6 +204,10 @@ df.month.municipio.total <- df.month.municipio %>% group_by(Municipio, Estado, P
 colnames(df.month.municipio.total)[4] <- "total_n"
 df.month.municipio.total <- df.month.municipio.total %>% mutate(Rate = total_n/Poblacion * 10000)
 
+#Calculate number of excluded municipalities
+df.month.municipio.total %>% filter(Poblacion >= 50000) %>% summarise(n())
+df.month.municipio.total %>% summarise(n())
+
 #Make title case for table
 df.month.municipio.total <- df.month.municipio.total %>% 
   mutate(Municipio1 = str_to_title(Municipio), 
@@ -215,7 +219,7 @@ kable(df.month.municipio.total %>% arrange(desc(Rate)) %>%
       format = "html", # default
       digits = 1,        # specify decimal places
       caption = "Table. Municipal rates of Group I medication dispensing in Mexico between 8/2015 and 10/2019",
-      col.names = c("Municipality", "Federal entity", "Rate per 10,000"),
+      col.names = c("Municipality", "State", "Rate per 10,000"),
       align = c("l", "l", "c")) %>% 
   row_spec(1:nrow(df.month.municipio.total %>% filter(Poblacion >= 50000)), color = "black") %>%
   kable_styling(bootstrap_options = c("striped", "hover",  "condensed", "responsive")) %>%
@@ -290,7 +294,7 @@ ggplot(df.quarter.estado.filter, aes(x=Quarter.year, y=Rate, group=as.factor(Est
   geom_line() + geom_point() +
   theme_minimal() +
   scale_color_manual(values = palette) +
-  labs(fill = "Federal Entity", y="Tasa de Recetas Surtidas por 10,000", x="Año-Trimestre") +
+  labs(fill = "State", y="Tasa de Recetas Surtidas por 10,000", x="Año-Trimestre") +
   theme(axis.text.x=element_text(angle=-45, hjust=0.01))
 
 
@@ -491,8 +495,6 @@ ggsave(plot = municipal.all.map,
 
 
 # Joinpoint analysis
-
-
 #https://rpubs.com/MarkusLoew/12164
 df.quarter.estado <- transform(df.quarter.estado, Estado.id=as.numeric(factor(Estado)))
 df.quarter.estado <- transform(df.quarter.estado, Quarter.id=as.numeric(factor(Quarter.year)))
@@ -501,7 +503,7 @@ df.quarter.national <- df.quarter.estado %>% group_by(Quarter.year) %>%
 df.quarter.national <- df.quarter.national %>% filter(!Quarter.year %in% c("2015-2","2015-3","2019-4"))
 df.quarter.national <- df.quarter.national %>% mutate(Quarter.id=row_number())
 df.quarter.national$Poblacion <- 119530753
-df.quarter.national <- df.quarter.national %>% mutate(Rate = round(Recetas/Poblacion * 100000),2)
+df.quarter.national <- df.quarter.national %>% mutate(Rate = round(Recetas/Poblacion * 10000,2))
 
 #write.csv(df.quarter.national, 'Joinpoint/joinpoint_national.csv' )
 #write.csv(df.quarter.estado, 'Joinpoint/joinpoint_state.csv' )
@@ -509,7 +511,7 @@ df.quarter.national <- df.quarter.national %>% mutate(Rate = round(Recetas/Pobla
 #Plot crude
 p <- ggplot(df.quarter.national, aes(x = Quarter.year, y = Recetas)) + geom_line(group = 1, color="blue") +
   theme_minimal() +
-  labs(y="Number of narcotic prescriptions dispensed", x="Year-Quarter") +
+  labs(y="Number of group I prescriptions dispensed", x="Year-Quarter") +
   theme(axis.text.x=element_text(angle=-45, hjust=0.01))
 p
 
@@ -560,32 +562,11 @@ df.quarter.national.aqc$avg.quarter.change <- round(df.quarter.national.aqc$avg.
 df.quarter.national.aqc$x <- c("2016-1", "2018-1")
 df.quarter.national.aqc$y <- c(500, 500)
 
-#plot
-
-set.seed(1)
-p <- ggplot(df.quarter.national, aes(x = Quarter.year, y = Recetas, color="b")) + 
-  geom_line(group = 1) +
-  theme_minimal() +
-  labs(y="Number of narcotic prescriptions dispensed", x="Year-Quarter") +
-  theme(axis.text.x=element_text(angle=-45, hjust=0.01)) + 
-  geom_vline(xintercept = my.lines, linetype = "dashed") + 
-  geom_line(data = my.model, aes(x = Quarter, y = Recetas, colour = "r")) +
-  scale_color_manual(name = "", values = c("b" = "blue", "r" = "red"), labels = c("Observed", "Fitted")) +
-  geom_label(data = df.quarter.national.aqc, 
-                   mapping = aes(x=x, y=y, label = paste0("QPC ", avg.quarter.change, "%", sep=" "),
-                    fill = factor(Period)), color = 'white',
-                    size = 3.5) +
-  scale_fill_manual(guide = "none", name = "Period", values = c("black","black","black")) +
-   theme(legend.position = "bottom")
-p
-
-
-
 # Joinpoint for rate
 #Plot crude
 p <- ggplot(df.quarter.national, aes(x = Quarter.year, y = Rate)) + geom_line(group = 1, color="blue") +
   theme_minimal() +
-  labs(y="Number of narcotic prescriptions dispensed", x="Year-Quarter") +
+  labs(y="Number of group I prescriptions dispensed", x="Year-Quarter") +
   theme(axis.text.x=element_text(angle=-45, hjust=0.01))
 p
 
@@ -642,20 +623,20 @@ df.quarter.national.aqc$avg.quarter.change <- c("103.5%\n(95% CI 27.8-224.2)", "
 
 #plot
 set.seed(1)
-p.jp.rate <- ggplot(df.quarter.national, aes(x = Quarter.year, y = Rate/10, color="b")) + 
+p.jp.rate <- ggplot(df.quarter.national, aes(x = Quarter.year, y = Rate, color="b")) + 
   geom_line(group = 1) +
   theme_minimal() +
   labs(y="Rate of opioid prescriptions dispensed\nper 10,000", x="Year-Quarter") +
   theme(axis.text.x=element_text(angle=-45, hjust=0.01)) + 
   geom_vline(xintercept = my.lines, linetype = "dashed") + 
-  geom_line(data = my.model, aes(x = Quarter, y = Rate/10, colour = "r")) +
+  geom_line(data = my.model, aes(x = Quarter, y = Rate, colour = "r")) +
   scale_color_manual(name = "", values = c("b" = "blue", "r" = "red"), labels = c("Observed", "Fitted")) +
   geom_label(data = df.quarter.national.aqc, 
                    mapping = aes(x=x, y=y2, label = paste0("QPC ", avg.quarter.change, "%", sep=" "),
                     fill = factor(Period)), color = 'white',
                     size = 3.5) +
   scale_fill_manual(guide=FALSE, name = "Period", values = c("black","black","black")) +
-  labs(caption = "Opioid prescribing rate is defined as the total number of Group I\nopioid prescriptions dispensed in the quarter per 100,000 inhabitants.") +
+  labs(caption = "Opioid prescribing rate is defined as the total number of group I opioid prescriptions dispensed in the quarter per 10,000 inhabitants.") +
    theme(legend.position = "bottom") + 
   ylim(0,5)
 p.jp.rate
@@ -804,7 +785,7 @@ GBD.opioid.heat <- ggplot(GBD.opioid.sum.stand_long, aes(x = Disease, y = Estado
   geom_tile(colour = "white", size = 1) + 
   scale_fill_continuous_sequential(name="Standardized opioid need", palette = "Heat") +
   scale_x_discrete(name = "Disease") + 
-  scale_y_discrete(name = "Federal entity") +
+  scale_y_discrete(name = "State") +
   theme_minimal() +
   theme(legend.position = "bottom", legend.key.width = unit(2, "cm"),
         panel.grid = element_blank()) + 
@@ -835,13 +816,13 @@ GBD.opioid.heat.capita <- ggplot(GBD.opioid.sum.capita.stand_long,
   geom_tile(colour = "white", size = 1) + 
   scale_fill_continuous_sequential(name="Standardized opioid need", palette = "Heat") +
   scale_x_discrete(name = "Disease group") + 
-  scale_y_discrete(name = "Federal entity", limits = rev(levels(GBD.opioid.sum.capita.stand_long$Estado))) +
+  scale_y_discrete(name = "State", limits = rev(levels(GBD.opioid.sum.capita.stand_long$Estado))) +
   theme_minimal() +
   theme(legend.position = "bottom", legend.key.width = unit(2, "cm"),
         panel.grid = element_blank()) + 
   theme(text = element_text(size = 14)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  #labs(title = "Standardized opioid need per capita by federal entity in Mexico") +
+  #labs(title = "Standardized opioid need per capita by state in Mexico") +
   coord_equal() 
 GBD.opioid.heat.capita
 
@@ -919,26 +900,67 @@ df.year.estado.r <- df.year.estado.r %>% mutate(methadone_dico = case_when(metha
                                                         methadone.clinics == 0 ~ 0))
 df.year.estado.r <- df.year.estado.r %>% mutate(opioid_rate = total_n/Poblacion * 10000)
 
+#Tertiary hospitals and oncologic centers
+#Import DGIS file
+#Available at http://sinaiscap.salud.gob.mx:8080/DGIS/ or http://gobi.salud.gob.mx/
+df.dgis <- read_excel("/Users/davigood/Box Sync/UCLA/2017_Opioids Mexico/COFEPRIS/Reviewer_response/ESTABLECIMIENTO_SALUD_202008.xlsx")
+
+df.dgis <- df.dgis %>% dplyr::select(2:13, 60:64, 67:69, 70, 74:77, 42)
+df.dgis <- df.dgis %>% dplyr::rename(Estado = `NOMBRE DE LA ENTIDAD`)
+
+#Import Secretaria de Salud recurso file
+#Available at https://datos.gob.mx/busca/dataset/recursos-en-salud-nivel-central
+df.hosp <- read.csv("/Users/davigood/Box Sync/UCLA/2017_Opioids Mexico/COFEPRIS/Reviewer_response/Recursos_Salud_2017_edited.csv", check.names = F)
+
+df.hosp <- df.hosp %>% dplyr::select(1:13, consultorio.oncologos = `N˙mero de Consultorios de OncologÌa`,
+                                     camas.oncologos = `N˙mero de camas de OncologÌa`,
+                                     camas.osea = `N˙mero de camas en la unidad de transplante de mÈdula Ûsea`,
+                                     med.oncologos = `N˙mero de MÈdicos OncÛlogos`)
+df.hosp <- df.hosp %>% left_join(df.dgis, by = "CLUES") #Merge with DGIS file to get additional info on each
+
+#Replace missing with zeros
+df.hosp$camas.oncologos <- df.hosp$camas.oncologos %>% replace_na(0)
+df.hosp$consultorio.oncologos <- df.hosp$consultorio.oncologos %>% replace_na(0)
+df.hosp$camas.osea <- df.hosp$camas.osea %>% replace_na(0)
+df.hosp$med.oncologos <- df.hosp$med.oncologos %>% replace_na(0) 
+
+#Filter only those with cancer doctors/beds or be it a tertiary hospital
+df.hosp <- df.hosp %>% filter(med.oncologos > 0 | camas.osea > 0 | 
+                                    consultorio.oncologos > 0 | camas.oncologos > 0 |
+                                    `NIVEL ATENCION` == "TERCER NIVEL")
+
+df.hosp.count <- df.hosp %>% group_by(`Nombre Estado`) %>% summarise(Tercer.nivel = n())
+df.hosp.count <- df.hosp.count %>% dplyr::rename(Estado = `Nombre Estado`)
+
+#Merge to main data frame
+df.year.estado.r <- df.year.estado.r %>% left_join(df.hosp.count, by = "Estado") 
+
+#Make table of Socioeconomic status by State
+df.year.estado.r %>% summarise(Count = n(), Mean = mean(IME), 
+                               SD = sd(IME), min = min(IME), max = max(IME))
+estado.ses.table <- df.year.estado.r %>% group_by(GME) %>% summarise(Count = n(), Mean = mean(IME), 
+                                                                     SD = sd(IME), min = min(IME), max = max(IME))
+estado.ses.table[,c(3:6)] <- round(estado.ses.table[,c(3:6)], 2)
+
 #Standardize marginalization index/opioid need scale
 df.year.estado.r$IME_stand <- scale(df.year.estado.r$IME, center = TRUE, scale = TRUE)
 df.year.estado.r$opioid.need_stand <- scale(df.year.estado.r$opioid.need_capita, center = TRUE, scale = TRUE)
 
-
 #Regression models
 #Regression - negative binomial
-
-
 label(df.year.estado.r$opioid.need_capita) <- "Opioid need per capita"
 label(df.year.estado.r$opioid.need_stand) <- "Standardized opioid need"
 label(df.year.estado.r$IME) <- "Socioeconomic status"
 label(df.year.estado.r$methadone.clinics) <- "Methadone clinics (per number of licensed clinics)"
 label(df.year.estado.r$methadone_dico) <- "Methadone clinics (yes/no)"
+label(df.year.estado.r$Tercer.nivel) <- "Tertiary hospitals/oncologic centers"
 df.year.estado.r$GME <- recode_factor(df.year.estado.r$GME,  
               `Muy alto` = "Very low", Alto = "Low", Medio = "Medium", 
               Bajo = "High", `Muy bajo` = "Very high")
 df.year.estado.r$IME <- df.year.estado.r$IME*-1
 
-dv.labels <- c("Model 1", "Model 2", "Model 3")
+dv.labels <- c("Model 1", "Model 2", "Model 3", "Model 4")
+
 m.nb1 <- glm.nb(total_n ~ opioid.need_capita + 
        offset(log(Poblacion)),
        data=df.year.estado.r)
@@ -950,9 +972,12 @@ m.nb3 <- glm.nb(total_n ~ opioid.need_capita + IME +
                   methadone.clinics + 
        offset(log(Poblacion)),
        data=df.year.estado.r)
+m.nb4 <- glm.nb(total_n ~ opioid.need_capita + IME + 
+                  methadone.clinics + Tercer.nivel +
+        offset(log(Poblacion)),
+        data=df.year.estado.r)
 
-
-tab_model(m.nb1, m.nb2, m.nb3, show.intercept = F, dv.labels = dv.labels,
+tab_model(m.nb1, m.nb2, m.nb3, m.nb4, show.intercept = F, dv.labels = dv.labels,
           title = "Negative binomial models of opioid dispensing rates 
           for federal entities in Mexico between August 2015 and October 2019",
           string.est = "IRR", digits.p = 2, digits = 3)
@@ -968,9 +993,13 @@ m.nb3.cat <- glm.nb(total_n ~ opioid.need_capita + GME +
                   methadone.clinics + 
        offset(log(Poblacion)),
        data=df.year.estado.r)
+m.nb4.cat <- glm.nb(total_n ~ opioid.need_capita + GME + 
+                      methadone.clinics + Tercer.nivel +
+                      offset(log(Poblacion)),
+                    data=df.year.estado.r)
 
 
-tab_model(m.nb1.cat, m.nb2.cat, m.nb3.cat, show.intercept = F, dv.labels = dv.labels,
+tab_model(m.nb1.cat, m.nb2.cat, m.nb3.cat, m.nb4.cat, show.intercept = F, dv.labels = dv.labels,
           title = "Negative binomial models of opioid dispensing rates 
           for federal entities in Mexico between August 2015 and October 2019",
           string.est = "IRR", digits.p = 2, digits = 3)
@@ -978,7 +1007,7 @@ tab_model(m.nb1.cat, m.nb2.cat, m.nb3.cat, show.intercept = F, dv.labels = dv.la
 glm.diag.plots(m.nb1)
 glm.diag.plots(m.nb2)
 glm.diag.plots(m.nb3)
-
+glm.diag.plots(m.nb4)
 
 #Residuals and Predicted Rate
 residuals.nb <- residuals(m.nb1, type = c("response"))
@@ -1003,9 +1032,6 @@ format(df.national$Opioid.need, scientific = FALSE)
 df.national <- df.national %>% mutate(fitted_rate = fitted.count/Poblacion * 10000)
 df.national <- df.national %>% mutate(observed_rate = observed.count/Poblacion * 10000)
 df.national <- df.national %>% mutate(observed.expected = ((observed_rate-fitted_rate)/fitted_rate)*100)
-
-
-
 
 #Observed/Expected scatterplot - Figure 1 Panel A
 p.scatter <- ggplot(data = df.year.estado.r, aes(y = opioid_rate, x = fitted_rate, 
@@ -1111,7 +1137,7 @@ ggplot(df.year.estado.r, aes(x=reorder(Estado1, value), y=value, label=round(val
   geom_hline(yintercept = 0, color = "red", alpha = 0.8, linetype = "longdash") +
   geom_text(color="white", size=2) +
   labs(#title = "Percentage of observed over expected opioid dispensing rate",
-       x = "Federal entity",
+       x = "State",
        y = "Percentage of observed group I opioid dispensing rate\nabove or below expected dispensing rate") + 
   ylim(-100, 250) +
   coord_flip() + theme(text = element_text(size=16)) +
