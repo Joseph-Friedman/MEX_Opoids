@@ -1,0 +1,13 @@
+"","Med4","""Joinpoint Model""","""AAPC Index""","""Start Obs""","""End Obs""","AQPC","Lower","Upper","""Statistically Significant (0=No  1=Yes)""","""Test Statistic""","""P-Value""","label"
+"1","Fentanyl",1,"""Full Range""",1,17,25.6,22.3,29,1,16.6,0,"AQPC 25.6%
+(95% CI: 22.3, 29)"
+"2","Hydromorphone",0,"""Full Range""",2,17,4.7,0.2,9.4,1,2.3,0,"AQPC 4.7%
+(95% CI: 0.2, 9.4)"
+"3","Methadone",1,"""Full Range""",1,17,37.2,21.6,54.8,1,5.1,0,"AQPC 37.2%
+(95% CI: 21.6, 54.8)"
+"4","Morphine",1,"""Full Range""",1,17,20.8,19.4,22.3,1,30.8,0,"AQPC 20.8%
+(95% CI: 19.4, 22.3)"
+"5","Oxycodone",1,"""Full Range""",1,17,18.3,14.6,22.2,1,10.3,0,"AQPC 18.3%
+(95% CI: 14.6, 22.2)"
+"6","Tapentadol",1,"""Full Range""",1,17,21.2,17.2,25.4,1,11.2,0,"AQPC 21.2%
+(95% CI: 17.2, 25.4)"
