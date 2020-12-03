@@ -1,6 +1,8 @@
-
 rm(list = ls())
-pacman::p_load(data.table, tidyverse,stringr,stringi,DT,expss,reshape,reshape2,readxl,hablar,skimr,fuzzyjoin,ggmap,spdep,maptools)
+pacman::p_load(data.table, tidyverse,stringr,stringi,DT,expss,reshape,reshape2,readxl,hablar,skimr,fuzzyjoin,ggmap,spdep,maptools,rgdal)
+
+#Don not run without google api first
+register_google(key = "[your key]")
 
 df <- read_excel('anexo-15118-19.xlsx', 
                  sheet = 3)
